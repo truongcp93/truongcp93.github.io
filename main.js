@@ -1,4 +1,4 @@
-const socket = io('https://stream141292.herokuapp.com');
+const socket = io('http://localhost:3000');
 
 $("#div-content").hide();
 
@@ -37,15 +37,7 @@ function playStream(idVideoTag, stream) {
 }
 
 
-// const peer = new Peer({key: 'ttpzgooaiubd42t9'});
-
-const peer = new Peer({ 
-    key: 'peerjs', 
-    host: 'stream141292.herokuapp.com', 
-    secure: true, 
-    port: 443, 
-//     config: customConfig 
-});
+const peer = new Peer({key: 'ttpzgooaiubd42t9'});
 
 peer.on('open', id => {
     $('#my-peer').append(id);
