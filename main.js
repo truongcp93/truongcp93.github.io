@@ -1,4 +1,4 @@
-const socket = io('https://stream141292.herokuapp.com');
+const socket = io('https://truong141292.herokuapp.com');
 
 $("#div-content").hide();
 
@@ -41,7 +41,7 @@ function playStream(idVideoTag, stream) {
 
 const peer = new Peer({
     key: 'peerjs',
-    host: 'stream141292.herokuapp.com',
+    host: 'truong141292.herokuapp.com',
     secure: true,
     port: 443,
     // config: customConfig
